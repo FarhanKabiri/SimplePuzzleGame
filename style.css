@@ -1,0 +1,105 @@
+body {
+    background: #f0f8ff;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+
+.game-banner {
+    background-color: #3498db; 
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.game-banner p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+#table {
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+
+#table div[id^="cell"] {
+    display: inline-block; 
+    width: 200px;
+    height: 113px;
+    border: 2px solid #3498db;
+    background-image: url('./images/carPic.png');
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin: 2px; 
+    vertical-align: middle;
+}
+
+
+#table div[id^="cell"]:not(.tile16):hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
+}
+
+
+.tile1 { background-position: 0px 0px; }
+.tile2 { background-position: -200px 0px; }
+.tile3 { background-position: -400px 0px; }
+.tile4 { background-position: -600px 0px; }
+
+.tile5 { background-position: 0px -113px; }
+.tile6 { background-position: -200px -113px; }
+.tile7 { background-position: -400px -113px; }
+.tile8 { background-position: -600px -113px; }
+
+.tile9 { background-position: 0px -226px; }
+.tile10 { background-position: -200px -226px; }
+.tile11 { background-position: -400px -226px; }
+.tile12 { background-position: -600px -226px; }
+
+.tile13 { background-position: 0px -339px; }
+.tile14 { background-position: -200px -339px; }
+.tile15 { background-position: -400px -339px; }
+
+
+div.tile16 { 
+    background-color: #d3d3d3; 
+    background-image: none !important; 
+    border: 2px solid #a9a9a9;
+    cursor: default;
+}
+
+
+#timer, #moveCounter {
+    font-size: 1.5em;
+    margin: 10px;
+    color: #2980b9;
+}
+
+button {
+    font-size: 1em;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #e67e22;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+
+#table [id^="row"] {
+    display: block;
+    margin-bottom: 3px;
+}
